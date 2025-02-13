@@ -102,8 +102,13 @@ body {
     border-bottom: 1px solid var(--darkviolet);
 }
 
+.navbar.shrink {
+    padding: 10px;
+    background: rgba(51, 51, 51, 0.9);
+}
+
 .navbar-brand {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 800;
 }
 
@@ -132,12 +137,12 @@ body {
 
 .nav-item {
     left: 0;
-    padding-right: 40px;
+    padding-right: 2.5rem;
 }
 
 .nav-link {
     color: var(--azure);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
 }
 
@@ -197,7 +202,10 @@ body {
 }
 
 
-.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link.active {
+    color: var(--purple);
+}
+
 .navbar .navbar-nav .nav-link:focus,
 .navbar .navbar-nav .nav-link:hover {
     color: var(--indigo);
@@ -224,7 +232,7 @@ body {
 
 .hero .item1 .txt1,
 .item1 h5 {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 700;
     color: var(--azure);
 }
@@ -237,7 +245,7 @@ body {
     animation: typing 4s steps(40) infinite, blink-caret .75s step-end infinite;
     border-right: .15em solid --indigo;
     color: var(--indigo);
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 800;
     overflow: hidden;
     white-space: nowrap
@@ -270,7 +278,7 @@ body {
 }
 
 .hero .item1 h1 {
-    font-size: 85px;
+    font-size: 5rem;
     font-weight: 700
 }
 
@@ -351,7 +359,7 @@ body {
 
 .hero .item3 .socials {
     color: #8450c0;
-    font-size: 50px;
+    font-size: 3.125rem;
     padding-right: 30px;
     transition: shadow .3s ease, color .3s ease
 }
@@ -406,7 +414,7 @@ body {
 
 .hover-text:hover {
     filter: drop-shadow(8px 8px 5px var(--purple));
-    transform: scale(1.1);
+    transform: scale(1.03);
     cursor: default;
     z-index: 9999;
 }
@@ -462,7 +470,6 @@ body {
 .showcase-container h2 {
     font-size: 3rem;
     margin-bottom: 1.5rem;
-
 }
 
 .intro {
@@ -501,13 +508,13 @@ body {
     aspect-ratio: 1/1;
     margin: 1rem;
     z-index: 99999;
+    transition: all 1s ease;
 }
 
 .skills .tooltip-container {
     position: relative;
     display: inline-block;
 }
-
 
 .skills .tooltip-text {
     visibility: hidden;
@@ -652,7 +659,7 @@ h2 {
     color: var(--azure);
     cursor: pointer;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.125rem;
     transition: background 0.1s, color 0.1s;
     order: 1;
     cursor: pointer;
@@ -742,7 +749,7 @@ h2 {
 .contact__section .about,
 .contact__section .about2 {
     color: #fff;
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 600;
     margin-right: 10px
 }
@@ -789,7 +796,7 @@ h2 {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #606ff1;
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: center;
     font-family: 'Impact', sans-serif;
     z-index: 10;
@@ -837,7 +844,7 @@ h2 {
 .form p:before {
     content: attr(type);
     display: block;
-    font-size: 14px;
+    font-size: 0.875rem;
     margin: 28px 0 0
 }
 
@@ -868,7 +875,7 @@ h2 {
     box-shadow: 10px 10px 40px -14px #000;
     color: #fff;
     content: "Hi";
-    font-size: 13px;
+    font-size: 0.875rem;
     padding: 16px 4px 16px 0;
     position: absolute;
     right: -20px;
@@ -884,7 +891,7 @@ h2 {
     }
 
     .navbar-brand {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
     .navbar-toggler {
@@ -896,7 +903,7 @@ h2 {
     }
 
     .nav-link {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .hero {
@@ -933,7 +940,7 @@ h2 {
     }
 
     .button1 {
-        font-size: 18px;
+        font-size: 1.125rem;
         padding: 0 30px;
         z-index: 9999;
 
@@ -976,7 +983,7 @@ h2 {
     }
 
     .education li {
-        font-size: .875rem;
+        font-size: 0.875rem;
     }
 
     .showcase-container .logo-slider {
@@ -1082,16 +1089,16 @@ h2 {
     }
 
     .hero .item1 h1 {
-        font-size: 65px;
+        font-size: 4rem;
     }
 
     .hero .item1 .txt1,
     .item1 .txt2 {
-        font-size: 32px;
+        font-size: 2rem;
     }
 
     .hero .item1 p {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     .hero .image1 {
@@ -1111,7 +1118,7 @@ h2 {
     }
 
     .button1 {
-        font-size: 20px;
+        font-size: 1.125rem;
         padding: 0 40px;
     }
 
@@ -1131,7 +1138,7 @@ h2 {
             "education experience"
             padding: 2rem;
         margin: 0 3rem;
-        font-size: 0.9rem;
+        font-size: 0.875rem;
         height: auto;
         /* Allow container height to adjust based on content */
     }
@@ -1148,7 +1155,7 @@ h2 {
         width: 100%;
         align-items: start;
         text-align: start;
-        font-size: 1.2rem;
+        font-size: 1.125rem;
     }
 
     .experience {
@@ -1181,7 +1188,7 @@ h2 {
     }
 
     .contact__section .leftBox a {
-        font-size: 1.3rem;
+        font-size: 1.25rem;
         margin-bottom: 0;
     }
 

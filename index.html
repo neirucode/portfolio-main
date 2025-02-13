@@ -20,7 +20,7 @@
 <body>
     <div class="wrapper">
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg bg-black sticky-top">
+        <nav class="navbar navbar-expand-lg bg-black sticky-top" id="navbar">
             <div class="container-fluid">
                 <a class="navbar-brand text-light" href="#home-section">Portfolio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -59,9 +59,10 @@
                     <span class="txt1">And I'm a </span>
                     <span class="txt2" id="typewriter"></span>
                     <p id="reveal-text" class="txt3">"This portfolio has been developed to showcase my
-                        proficiency in front-end development. Although it utilizes Bootstrap, I deliberately chose not
-                        to implement React in order to emphasize my fluency in HTML, CSS, and JavaScript, thereby
-                        demonstrating a solid foundation in essential front-end technologies"</p>
+                        proficiency in <em>Design and Website development</em>. I deliberately chose not
+                        to implement any Front-end Framework in order to emphasize my fluency in <em>HTML, CSS, and
+                            JavaScript,</em> thereby
+                        demonstrating a solid foundation in essential Web development technologies"</p>
                 </div>
                 <div class="col-lg-6 item2">
                     <div class="ellipse"></div>
@@ -129,7 +130,7 @@
                 <div class="skills">
 
                     <h2>Skills</h2>
-                    <h4>Web Development</h4>
+                    <h4>Web & Software Development</h4>
                     <div class="logo-container">
                         <div class="logo-slider">
                             <div class="tooltip-container">
@@ -146,6 +147,25 @@
                                 <span class="tooltip-text">JavaScript</span>
                             </div>
                             <div class="tooltip-container">
+                                <img class="logos hover-text" src="images/icons/java-programming-language-icon.svg"
+                                    alt="Java logo">
+                                <span class="tooltip-text">Java</span>
+                            </div>
+                            <div class="tooltip-container">
+                                <img class="logos hover-text"
+                                    src="images/icons/c-plus-plus-programming-language-icon.svg" alt="C++ logo">
+                                <span class="tooltip-text">C++</span>
+                            </div>
+                            <div class="tooltip-container">
+                                <img class="logos hover-text" src="images/icons/python-programming-language-icon.svg"
+                                    alt="Python logo">
+                                <span class="tooltip-text">Python</span>
+                            </div>
+                            <div class="tooltip-container">
+                                <img class="logos hover-text" src="images/icons/php-svgrepo-com.svg" alt="PHP logo">
+                                <span class="tooltip-text">PHP</span>
+                            </div>
+                            <div class="tooltip-container">
                                 <img class="logos hover-text" src="images/icons/bootstrap-svgrepo-com.svg"
                                     alt="bootstrap logo">
                                 <span class="tooltip-text">Bootstrap</span>
@@ -159,10 +179,7 @@
                                 <img class="logos hover-text" src="images/icons/react-svgrepo-com.svg" alt="React logo">
                                 <span class="tooltip-text">React.js</span>
                             </div>
-                            <div class="tooltip-container">
-                                <img class="logos hover-text" src="images/icons/php-svgrepo-com.svg" alt="PHP logo">
-                                <span class="tooltip-text">PHP</span>
-                            </div>
+
                             <div class="tooltip-container">
                                 <img class="logos hover-text" src="images/icons/mysql-svgrepo-com.svg" alt="Mysql logo">
                                 <span class="tooltip-text">MySQL</span>
@@ -191,6 +208,11 @@
                                     alt="adobePhotoshop logo">
                                 <span class="tooltip-text">Adobe Photoshop</span>
                             </div>
+                            <div class="tooltip-container">
+                                <img class="logos hover-text" src="images/icons/adobe-illustrator-icon.svg"
+                                    alt="adobeIllustrator logo">
+                                <span class="tooltip-text">Adobe Illustrator</span>
+                            </div>
                         </div>
                     </div>
                     <h4>Video Editing</h4>
@@ -209,17 +231,18 @@
                     <h2>Experience</h2>
                     <ul>
                         <li class="hover-text">
-                            <p>Dentofarm Resort
-                                Frontend Developer (Capstone Proj.)
+                            <p>Dentofarm Resort <br>
+                                <em>Frontend Developer (Capstone Proj.)</em>
                             </p>
                         </li>
                         <li class="hover-text">
-                            <p>Dept. of Env. & Natural Resources
-                                IT Staff (Intern)
+                            <p>DENR <br>
+                                <em>IT Staff (Intern)</em>
                             </p>
                         </li>
                         <li class="hover-text">
-                            <p>Freelancing
+                            <p>Freelancing <br>
+                                <em> UI/UX Designer, Graphic Designer, Web Developer</em>
                             </p>
                         </li>
                     </ul>
@@ -252,6 +275,7 @@
                 <div class="col-lg-8">
                     <div class="tabs__container">
                         <div class="tabs">
+                            <!-- Dentofarm -->
                             <input class="input" name="tabs" type="radio" id="tab-1" checked="checked" />
                             <label class="label" for="tab-1">Dentofarm</label>
                             <div class="panel">
@@ -261,7 +285,7 @@
                                         <img class="w-100" src="images/personalProjects/dento showcase.png" alt="">
                                     </div> -->
                                     <div class="col-lg-12">
-                                        <video class="w-100" controls muted title="Dentofarm Demo Video">
+                                        <video class="w-100" controls title="Dentofarm Demo Video">
                                             <source src="video/dento.mp4" type="video/mp4">
                                             Your browser does not support the video tag.
                                         </video>
@@ -325,6 +349,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- vernile -->
                             <input class="input" name="tabs" type="radio" id="tab-2" />
                             <label class="label" for="tab-2">Vernile</label>
                             <div class="panel">
@@ -359,33 +384,53 @@
                                     </div> -->
                                 </div>
                             </div>
+                            <!-- Hansen Partners -->
                             <input class="input" name="tabs" type="radio" id="tab-3" />
-                            <label class="label" for="tab-3">Frontend Mentor</label>
+                            <label class="label" for="tab-3">Sereno-</label>
+                            <div class="panel">
+                                <h1>Sereno Real Estate Website</h1>
+                                <div class="row g-0">
+                                    <div class="col-lg-12">
+                                        <div class="row g-0 mb-2">
+                                            <img class="w-100" src="images/personalProjects/hansenpartners.png"
+                                                alt="Sereno Real estate website">
+                                        </div>
+                                        <!-- <div class="row">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                Laboriosam
+                                                hic
+                                                accusantium facere doloremque corporis illum earum sed modi accusamus
+                                                explicabo, eum quam ea consectetur porro? Ratione quidem maxime nobis
+                                                vero
+                                                veniam, quasi labore odio reiciendis corrupti ipsa non exercitationem,
+                                                minus, culpa possimus dolorum sunt pariatur quia. Delectus ipsam
+                                                suscipit
+                                                modi! veniam, quasi labore odio reiciendis corrupti ipsa non
+                                                exercitationem,
+                                                minus, culpa possimus dolorum sunt pariatur quia. Delectus ipsam
+                                                suscipit
+                                                modi
+                                                !</p>
+                                        </div> -->
+                                    </div>
+                                    <!-- <div class="col-lg-4">
+                                        <img class="w-100" src="images/personalProjects/vernile mobile.png"
+                                            alt="vernile blog website">
+                                    </div> -->
+                                </div>
+                            </div>
+                            <!-- frontendmentor -->
+                            <input class="input" name="tabs" type="radio" id="tab-4" />
+                            <label class="label" for="tab-4">Frontend Mentor</label>
                             <div class="panel panel3">
                                 <h1>Frontend Mentor Projects</h1>
                                 <div class="row g-0">
                                     <div class="col-lg-4">
-                                        <a href="https://neirucode.github.io/qr-code-component/"><img
+                                        <a href="https://neirucode.github.io/HotelWeb/"><img
                                                 class="w-100 h-100 project-sc"
-                                                src="images/frontendmentor/qr-code-component-solution.png" alt=""></a>
-                                        <p>Qr code Component</p>
+                                                src="images/personalProjects/hotel showcase.png" alt=""></a>
+                                        <p>Responsive Hotel Booking Website</p>
                                     </div>
-                                    <div class="col-lg-4">
-                                        <a href="https://neirucode.github.io/blog-preview-card/"> <img
-                                                class="w-100 h-100 project-sc"
-                                                src="images/frontendmentor/blog-preview-card-desktop.png" alt=""></a>
-
-                                        <p>Blog-preview-card Component</p>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <a href="https://neirucode.github.io/social-links-profile/"> <img
-                                                class="w-100 h-100 project-sc"
-                                                src="images/frontendmentor/social-links-profile-desktop.png" alt=""></a>
-
-                                        <p>Social links Profile Component</p>
-                                    </div>
-                                </div>
-                                <div class="row g-0">
                                     <div class="col-lg-4">
                                         <a href="https://neirucode.github.io/recipe-page/"><img
                                                 class="w-100 h-100 project-sc"
@@ -398,15 +443,36 @@
                                                 src="images/frontendmentor/product-preview-card-desktop.png" alt=""></a>
                                         <p>Responsive Product preview card</p>
                                     </div>
+
+                                </div>
+                                <div class="row g-0">
                                     <div class="col-lg-4">
-                                        <a href="https://neirucode.github.io/HotelWeb/"><img
+                                        <a href="https://neirucode.github.io/blog-preview-card/"> <img
                                                 class="w-100 h-100 project-sc"
-                                                src="images/personalProjects/hotel showcase.png" alt=""></a>
-                                        <p>Responsive Hotel Booking Website</p>
+                                                src="images/frontendmentor/blog-preview-card-desktop.png" alt=""></a>
+
+                                        <p>Blog-preview-card Component</p>
                                     </div>
+
+                                    <div class="col-lg-4">
+                                        <a href="https://neirucode.github.io/social-links-profile/"> <img
+                                                class="w-100 h-100 project-sc"
+                                                src="images/frontendmentor/social-links-profile-desktop.png" alt=""></a>
+                                        <p>Social links Profile Component</p>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <a href="https://neirucode.github.io/qr-code-component/"><img
+                                                class="w-100 h-100 project-sc"
+                                                src="images/frontendmentor/qr-code-component-solution.png" alt=""></a>
+                                        <p>Qr code Component</p>
+                                    </div>
+
+
+
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>

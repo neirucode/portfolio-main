@@ -5,13 +5,13 @@
 
 function sendEmail() {
     const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
+    const email = document.getElementById('email').value;  // User's email (Reply-To)
     const message = document.getElementById('message').value;
 
     const templateParams = {
-        name: name,
-        email: email,
-        message: message
+        from_name: name,   // Matches {{from_name}}
+        reply_to: email,   // Matches {{reply_to}} (Reply-To field)
+        message: message   // Matches {{message}}
     };
 
     emailjs.send('service_294hyhe', 'template_fsuxtw7', templateParams)
@@ -23,6 +23,7 @@ function sendEmail() {
             alert('Failed to send message. Please try again.');
         });
 }
+
 // Typewriter Effect
 const typewriter = document.getElementById('typewriter');
 const phrases = ["Developer", "Designer", "Freelancer"];
@@ -171,3 +172,25 @@ function createLogoSlider(skillArray, containerId) {
 // Generate logo sliders for both sections
 createLogoSlider(webDevSkills, 'webDevSkills');
 createLogoSlider(graphicDesignSkills, 'graphicDesignSkills');
+
+// hide navbar on scroll
+// let lastScrollTop = 0;
+// let navbar = document.getElementById("navbar");
+
+// window.addEventListener("scroll", function () {
+//     let scrollTop = window.scrollY;
+
+//     if (scrollTop > lastScrollTop) {
+//         navbar.style.top = "-60px"; // Hides navbar
+//     } else {
+//         navbar.style.top = "0";
+//     }
+
+//     lastScrollTop = scrollTop;
+// });
+document.querySelectorAll(".nav-link").forEach(link => {
+    link.addEventListener("click", function () {
+        document.querySelectorAll(".nav-link").forEach(item => item.classList.remove("active"));
+        this.classList.add("active");
+    });
+});
